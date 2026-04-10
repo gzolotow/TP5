@@ -1,5 +1,5 @@
-const express = require("express");
-const obtenerHoraActual = require("./time");
+import express from "express";
+import { obtenerHoraActual } from "./time.js";
 
 const app = express();
 
