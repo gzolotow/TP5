@@ -5,18 +5,18 @@ const app = express();
 
 
 
-app.get("/", (req, res) => {
+app.get("/", (res) => {
     res.send("Bienvenido a mi servidor 🚀");
 });
 
 
-app.get("/hora", (req, res) => {
+app.get("/hora", (res) => {
     res.send(obtenerHoraActual());
 });
 
 
 
-app.get("/fecha-completa", (req, res) => {
+app.get("/fecha-completa", (res) => {
     const ahora = new Date();
 
     const opciones = {
